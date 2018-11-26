@@ -1,54 +1,275 @@
-body{
-    margin: 0;
-    background-color: aliceblue;
+body
+{
+    background-image: url("../imagenes/nature.jpg");
+    background-attachment: fixed;
+    margin:0;
+    padding:0;    
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
 }
 
-header, main {
-    padding: 15px;
+header
+{
+    width: 100%;
 }
-
-footer{
-    background-color: black;
-    color: white;
-    padding: 10px;
-}
-
-/* MENU */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-nav li {
-    float: left;
-}
-
-nav li a, .dropbtn {
-    display: inline-block;
+header h1
+{
     color: white;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
 }
 
-nav li a:hover{
-    background-color: red;
-}
-
-.bearsContainer{
+nav
+{
+    margin: 0;
     width: 100%;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
 }
 
-.bearContainer{
-    text-align: center;
-    border: solid 0.5px black;
-    margin: 4px;
-    padding: 5px;
-    background-color: beige;
-    border-radius: 10px;
+nav ul
+{
+    list-style: none;
+    padding: 0;
+    display: flex;
 }
+
+nav ul:hover
+{
+    background: red;
+    display:block;
+}
+
+nav li 
+{
+    float: left;
+    flex-grow: 1;
+}
+
+nav li a
+{
+    padding: 40px;
+    border: 2px solid black;
+    color: black;
+}
+
+
+header
+{
+    background:black;
+}
+
+.red
+{
+    background:red;
+    width: 20%;
+}
+.blue
+{
+    background:lightskyblue;
+    width: 20%;
+
+}
+.yellow
+{
+    background:yellow;
+    width: 20%;
+
+}
+
+main
+{
+    background: rgba(0, 0, 0, 0.582);
+    width:46%;
+    height:100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: inset 0 0 10px #000;
+    border-radius: 4px; /*Bordes redondeados*/
+    color:white;
+}
+
+aside
+{
+    background: rgba(0, 0, 0, 0.582);
+    width:46%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: inset 0 0 10px #000;
+    border-radius: 4px; /*Bordes redondeados*/
+    color:white;
+}
+
+aside iframe
+{
+    width: 50%;
+    height:50%;
+    border: 0;
+    display: block;
+    text-align: center;
+    margin-left: 25%;
+}
+
+.galeria
+{
+    background: rgba(0, 0, 0, 0.582);
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+    margin: 2%;
+    box-shadow: inset 0 0 10px #000;
+    border-radius: 4px; /*Bordes redondeados*/
+}
+
+.galeria h4
+{
+    font-weight: normal; 
+    font-size: 30px;
+    margin: 20px 0px;
+    font-family: monospace;
+    color:white; 
+}
+
+.galeria img
+{
+    border: 1px solid black;
+    width: 100%;
+    margin: 15px 0px;
+}
+
+.galeria h5
+{
+    font-weight: normal; 
+    font-size: 20px;
+    margin: 20px 0px;
+    font-family: monospace;
+    color:white; 
+    text-align: center;
+}
+
+.galeria p
+{
+    color:white;
+}
+
+h4
+{  
+    text-align: center;
+}
+
+h5
+{
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+}
+footer
+{
+    margin-top: 5%;
+    background-color: black;
+    width: 100%;
+    padding: 1%;
+}
+
+footer td
+{
+    color: white;
+}
+
+footer td a
+{
+    color: orangered;
+}
+
+.Carrusel, main, aside
+{
+    margin: 2%;
+    font-size: 16px;
+    padding: 1%;
+}
+
+.Carrusel
+{
+    width:100%;
+    border: 4px solid rgba(255, 255, 255, 0.432);
+    padding: 1%;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+form
+{
+    width:450px;
+    margin:auto;
+    background: rgba(0, 0, 0, 0.582);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+    font-size: 18px;
+}
+
+h2
+{
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input
+{
+    width:100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 4px;
+}
+
+.carousel-caption
+{
+    background-color: rgba(0, 0, 0, 0.466);
+    color: white;
+    font-family: 'Times New Roman';
+    font-size:16px;
+}
+
+@media (max-width:900px)
+{
+    form
+    {
+        width:100%;
+    }
+
+    main
+    {
+        width:100%;
+    }
+
+    aside
+    {
+        width: 100%;
+    }
+
+    .carousel-caption 
+    {
+        display: block; 
+    }
+
+    iframe
+    {
+        width: 100%;
+        height: 100%; 
+    }
+
+    .galeria td img
+    {
+        margin-top: 50%;
+        margin-bottom: 1%;
+    }
+}
+

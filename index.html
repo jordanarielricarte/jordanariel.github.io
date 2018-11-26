@@ -4,35 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/main.css"/>
-    <title>Mis Osos</title>
+    <title>MisPerrisprueba</title>
+    <link rel="stylesheet" href="Style/style.css"/>
+    <link rel="icon" href="imagenes/perrologo.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <link rel="manifest" href="manifest.json">
-    <link rel="icon" href="images/bear1.jpg"/>
-     <!-- Add to home screen for Safari on iOS -->
-     <meta name="apple-mobile-web-app-capable" content="yes">
-     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-     <meta name="apple-mobile-web-app-title" content="Weather PWA">
-     <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
-     <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
-     <meta name="msapplication-TileColor" content="#2F3BA2">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Mis Perris">
+    <link rel="apple-touch-icon" href="imagenes/icons/icon-152x152.png">
+    <meta name="msapplication-TileImage" content="imagenes/icons/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
+
 </head>
+
 <body>
     <header>
-        <h1>Mis Osos</h1>
+            <nav>
+            <ul>
+                <li><a class="red" href="index.html">Menu</a></li>
+                <li><a class="blue" href="registro.html">Registro</a></li>
+                <li><a class="yellow" href="galeria.html">Galeria</a></li>
+            </ul>
+             </nav>
+             <h1>Mis perris</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="info.html">Información</a></li>
-            <li><a href="gallery.html">Galería</a></li>            
-        </ul>
-    </nav>
-    <main>
-        <h2>Bienvenido a la página mis Osos</h2>
+
+    <div class="Carrusel">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+          </ol>
+      
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="imagenes/PerroFamilia2xx.jpg" alt="Los Angeles" style="width:100%;">
+              <div class="carousel-caption">
+                <h1>Testimonio1</h1>
+                <p style="text-align: center;">
+                    La verdad es que floppy ha sido la mejor mascota de todo, es demasiado cariñoso con nuestro hijos,
+                    amigos y con nosotros. Creo que si la gente puede ayudar adoptar a estas mascotita tambien estarian
+                    tan encantados como nosotros, realmente floppy es un angel que vino a unirnos mas.
+                </p>
+            </div>   
+            </div>
+      
+            <div class="item">
+              <img src="imagenes/PerroFamilia3xx.jpg" alt="Chicago" style="width:100%;">
+              <div class="carousel-caption">
+                <h1>Testimonio2</h1>
+                <p style="text-align: center;">
+                    Nuestros hijos siempre anhelaban tener una mascota, nosotros no queriamos creiamos que era una
+                    verdadera molestia, pero paso que cuando decidimos adoptar a Matta nos alegro bastante
+                    era muy jugueton, cariñoso y bastante correcto, ya que, hace caso en todo, nos ayuda con nuestro hijos, estamos muy agredico con el
+                </p>
+              </div>    
+            </div>
+        </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+    </div>
+
+    <main> 
+            <h2>¿Quieres contactarte con nosotros?</h2>           
+            <p>Unicamente debes colocar tus datos como nombres, correo y el mensaje que deseas que nosotros
+               podamos ver, para luego enviarte una respuesta en brevedad.
+            </p>
+            <hr>
+            <H2>Necesitamos de ti, ayudanos a ayudarles a ellos</H2>
+            <p>Somos una fundacion sin fines de lucro ni nada de ese estilo, solo buscamos una cooperacion para poder financiar los medicamentos y los veterinarios para la ayuda de los animales, tambien puedes ayudarnos dandonos
+               aviso de donde se encuentra algun animal herido o traer tu animal para rehabilitación.
+            </p>
     </main>
+
+    <aside>
+        <h2>Aqui un video de rescate!</h2>
+        <iframe
+        src="https://www.youtube.com/embed/Ub8-Gd1G1Zo" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+        </iframe>
+        <br>
+        <p>Aqui puedes ver el resultado de un duro trabajo que consigo trajo una linda
+            recompensa, para ellos y a nosotros.
+        </p>
+    </aside>
+
     <footer>
-        &copy; Todos los derechos reservados
+        <table>
+            <tr>
+                <td>
+                    Numero Telefonico :
+                </td>
+                <td>
+                    <a href="tel:+56979644180">
+                        +56 9 796 411 80
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Correo Electronico : 
+                </td>
+                <td>
+                    <a href="mail:aimbox_prox@hotmail.cl">
+                        aimbox_prox@hotmail.cl
+                    </a>
+                </td>
+            </tr>
+            <tr id= "derechos">
+                    <td colspan="2">
+                        &copy;Todos los derechos reservados por la Fundacion Mis Perris
+                    </td>
+            </tr>
+        </table>
     </footer>
-    <script src="scripts/app.js"></script>
+
+    <script src="../jordanaguilera.github.io/javascript/app.js"></script>
 </body>
 </html>
