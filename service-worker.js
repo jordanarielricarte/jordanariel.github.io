@@ -1,4 +1,4 @@
-var cacheName = "osos-v2";
+var cacheName = "misperrisv2";
 var filesToCache = [
     "/",
     "/index.html",
@@ -6,6 +6,7 @@ var filesToCache = [
     "/galeria.html",
     "/scripts/app.js",
     "/styles/main.css",
+    "../jordanariel.github.io/styles/main.css/",
     "/images/perrologo.jpg",
     "/images/perrogaleria5.jpg",
     "/images/perrogaleria6.jpg",
