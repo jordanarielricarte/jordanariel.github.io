@@ -12,9 +12,7 @@ var filesToCache = [
     "/images/perrogaleria6.jpg",
     "/images/perrogaleria4.jpg",
     "/images/perrogaleria3.jpeg",
-    "/images/nature.jpg",
-    "/images/bear7.jpg",
-    "/images/bear8.jpg",
+    "../jordanaguilera.github.io/javascript/app.js",
     "/images/bear9.jpg"
 ];
 

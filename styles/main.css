@@ -238,6 +238,30 @@ input
     font-size:16px;
 }
 
+
+nav a, button{
+    min-width: 48px;
+    min-height: 48px;
+}
+
+.navbar {
+    padding:10px;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+nav
+{
+    width: 100%;
+}
+
+nav a img
+{
+    margin-bottom: 20px;
+}
+
+
+
 @media (max-width:900px)
 {
     form
