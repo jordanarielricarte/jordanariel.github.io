@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MisPerrisprueba</title>
+    <link rel="stylesheet" href="Style/style.css"/>
+    <link rel="icon" href="imagenes/perrologo.png"/>
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+            <nav>
+            <ul>
+                <li><a class="red" href="index.html">Menu</a></li>
+                <li><a class="blue" href="registro.html">Registro</a></li>
+                <li><a class="yellow" href="galeria.html">Galeria</a></li>
+            </ul>
+             </nav>
+             <h1>Mis perris</h1>
+    </header>
+    
+    <form id="Registrar">
+        <h2>DATOS GENERALES</h2>
+  
+         <input type="text" placeholder="Nombres *" autofocus required aria-required="true" class="form-control" name="nombre" onkeypress="return soloLetras(event)" /> 
+         <script src="javascript/ValidarNom.js"></script>
+                     
+           <input type="text" placeholder="Apellidos *" required aria-required="true" class="form-control" name="apellidos" id="apellidos" onkeypress="return soloLetras(event)"/> 
+           <script src="javascript/ValidarNom.js"></script>
+  
+           <input type="text" id="rut" name="rut *" required aria-required="true" oninput="checkRut(this)" placeholder="Ingrese RUN">
+           <script src="javascript/validarRUT.js"></script>
+          
+           <input type="email" placeholder="Correo Electronico *" required aria-required="true" class="form-control" name="Correo Electronico" id="CorreoElectronico" onkeypress="return validateMail(event)"/>
+           <script src="javascript/ValidarEmail.js"></script>
+ 
+           <input type="password" id="password" name="password" required aria-required="true" placeholder="Ingrese Contraseña">
+        
+           <input type="tel" placeholder="telefono *" required aria-required="true" name="telefono" onkeypress="return SoloNumeros(event)"/> 
+           <script src="javascript/ValidarCel.js"></script>
+      
+           <h2>Fecha de Nacimiento</h2>
+           <input type="date" name="fecha" required aria-required="true" min="1910-01-01" max="2099-12-31" value="1910-01-01" step="1" class="form-control"/> 
+         
+           <h2>Región y Ciudad</h2>      
+           <input list="Región" required aria-required="true">
+             <datalist id="Región">
+                 <option value="Region de Arica y Parinacota">
+                 <option value="Region de Tarapaca">
+                 <option value="Region de Antofagasta">
+                 <option value="Region de Calama">
+                 <option value="Region de Coquimbo">
+                 <option value="Region de Valparaiso">
+                 <option value="Region Metropolitana">
+                 <option value="Region Libertador Bernardo O'Higgins">
+                 <option value="Region del Maule">
+                 <option value="Region del Bio Bio">
+                 <option value="Region de Ñuble">
+                 <option value="Region de la Araucania">
+                 <option value="Region Los Rios">
+                 <option value="Region Los lagos">
+                 <option value="Region de Aysen">             
+                 <option value="Region de Magallanes y la Antartida">
+             </datalist>
+ 
+          <input list="Ciudad" required aria-required="true">
+             <datalist id="Ciudad">
+                 <option value="Arica">
+                 <option value="Iquique">
+                 <option value="Colchane">
+                 <option value="Santiago">
+                 <option value="La tirana">
+                 <option value="Valparaiso">
+                 <option value="Viña del Mar">
+                 <option value="Temuco">
+                 <option value="Puerto Cisnes">
+                 <option value="Puerto Natales">
+                 <option value="Puerto Montt">
+                 <option value="Coquimbo">
+                 <option value="La Serena">
+                 <option value="Copiapo">
+                 <option value="Putre">
+                 <option value="Punta Arenas">
+                 <option value="San Clemente">
+                 <option value="Castro">
+                 <option value="Rancagua">
+                 <option value="Valdivia">
+                 <option value="Puerto Lorca">
+                 <option value="Cohayque">
+                 <option value="Puerto William">
+                 <option value="Porvenir">
+                 <option value="Molina">
+                 <option value="Rengo">
+                 <option value="Rio Bueno">
+                 <option value="Concepcion">
+                 <option value="Talca">
+                 <option value="Pucon">
+                 <option value="Osorno">
+                 <option value="Ancud">
+                 <option value="Chillan">
+                 <option value="Los angeles">
+                 <option value="Calama">
+                 <option value="San Pedro de Atacama">
+               </datalist>
+ 
+            <h2>Descripción</h2>
+             <textarea name="Descripción" cols="55" rows="10" class="form-control">Escribir aquí  la Descripción</textarea>   
+             <input type="submit" value="Registrarse"> 
+     </form>
+
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    Numero Telefonico :
+                </td>
+                <td>
+                    <a href="tel:+56979644180">
+                        +56 9 796 411 80
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Correo Electronico : 
+                </td>
+                <td>
+                    <a href="mail:aimbox_prox@hotmail.cl">
+                        aimbox_prox@hotmail.cl
+                    </a>
+                </td>
+            </tr>
+            <tr id= "derechos">
+                    <td colspan="2">
+                        &copy;Todos los derechos reservados por la Fundacion Mis Perris
+                    </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>
